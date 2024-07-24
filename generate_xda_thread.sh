@@ -269,13 +269,10 @@ Check out our [URL='https://evolution-x.org/']website[/URL]!
 [SPOILER]
 [SIZE=5][B][COLOR=rgb(0, 96, 255)][SIZE=5][B]First Time Install[/B][/SIZE][/COLOR][/B][/SIZE]
 [COLOR=rgb(251, 160, 38)](Note: These releases include firmware)[/COLOR]
-1. Download boot, dtbo, vendor_kernel_boot, vendor_boot & rom for your device from [URL='$installation_images_url']here[/URL]
+1. Download recovery.img for your device from [URL='$installation_images_url']here[/URL]
 2. Reboot to bootloader
-3. fastboot flash boot boot.img
-fastboot flash dtbo dtbo.img
-fastboot flash vendor_kernel_boot vendor_kernel_boot.img
-fastboot flash vendor_boot vendor_boot.img
-fastboot reboot recovery
+3. fastboot flash recovery recovery.img
+   fastboot reboot recovery
 4. While in recovery, navigate to Factory reset -> Format data/factory reset and confirm to format the device.
 5. When done formatting, go back to the main menu and then navigate to Apply update -> Apply from ADB
 6. adb sideload rom.zip (replace "rom" with actual filename)
